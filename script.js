@@ -182,11 +182,11 @@ $(document).ready(() => {
             let x = Math.floor(Math.random() * columnCount);
             let y = Math.floor(Math.random() * rowCount);
             while (board[y][x].species != 0) {
-                x = Math.floor(Math.random() * columnCount);
-                y = Math.floor(Math.random() * rowCount);
+                x = Math.floor(Math.random() * columnCount / 2);
+                y = Math.floor(Math.random() * rowCount / 2);
             }
 
-            board[y][x].species = i;
+            board[y][x].species = i / 2;
         }
 
         iterationCount = 0;
