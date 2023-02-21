@@ -5,7 +5,7 @@ $(document).ready(() => {
     var cellSize;
     var speciesArr;
     var iterationCount;
-    const maxIteration = 100;
+    const maxIteration = 1000000;
 
     firstBoardInit();
 
