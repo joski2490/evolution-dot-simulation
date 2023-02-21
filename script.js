@@ -1,7 +1,7 @@
 $(document).ready(() => {
     var board;
-    const columnCount = 64;
-    const rowCount = 64;
+    const columnCount = 80;
+    const rowCount = 120;
     var cellSize;
     var speciesArr;
     var iterationCount;
@@ -186,7 +186,7 @@ $(document).ready(() => {
                 y = Math.floor(Math.random() * rowCount);
             }
 
-            board[y][x].species = i - 1;
+            board[y][x].species = i;
         }
 
         iterationCount = 0;
