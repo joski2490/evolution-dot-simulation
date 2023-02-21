@@ -1,7 +1,7 @@
 $(document).ready(() => {
     var board;
-    const columnCount = 80;
-    const rowCount = 120;
+    const columnCount = 64;
+    const rowCount = 64;
     var cellSize;
     var speciesArr;
     var iterationCount;
@@ -83,7 +83,7 @@ $(document).ready(() => {
     function drawBoard() {
         let canvas = $('.board')[0];
 
-        let maxCanvasSize = Math.min($(window).height() * 0.75, $(window).width() * 0.9);
+        let maxCanvasSize = Math.min($(window).height() * 0.9, $(window).width() * 0.99);
         let maxDivision = Math.max(columnCount, rowCount);	
         let cellLength = Math.floor(maxCanvasSize / maxDivision);	
         let canvasLength = cellLength * maxDivision;
