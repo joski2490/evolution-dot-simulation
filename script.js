@@ -148,12 +148,20 @@ $(document).ready(() => {
         let speciesFive = {
             color: "pink"
         };
+        let speciesSix = {
+            color: "orange"
+        };
+        let speciesSeven = {
+            color: "purple"
+        };
 
         speciesArr.push(speciesOne);
         speciesArr.push(speciesTwo);
         speciesArr.push(speciesThree);
         speciesArr.push(speciesFour);
         speciesArr.push(speciesFive);
+        speciesArr.push(speciesSix);
+        speciesArr.push(speciesSeven);
 
         for (let i = 1; i < speciesArr.length; i++) {
             let species = speciesArr[i];
